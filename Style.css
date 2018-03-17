@@ -5,7 +5,7 @@
     /* 100% Full-height */
     width: 0;
     /* 0 width - change this with JavaScript */
-    position: absolute;
+    position: fixed;
     /* Stay in place */
     z-index: 1;
     /* Stay on top */
@@ -49,6 +49,11 @@
     font-size: 36px;
     margin-left: 50px;
 }
+.navbar .navbar-expand-lg .navbar-light .bg-light
+{
+    width: 100%;
+    position: fixed;
+}
 
 .navbar-brand 
 {
@@ -67,7 +72,7 @@
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 300px) {
     .sidenav {
         padding-top: 15px;
     }
@@ -75,6 +80,7 @@
         font-size: 18px;
     }
 }
+
 
 span {
     font-size: 20px;
@@ -98,11 +104,16 @@ h1 {
 {
   background: #3B5998;
   color: white;
+  border-color: rgba(0,0,0,0.2);
+
 }
 .fa-twitter 
+{
+background: rgb(92, 125, 196);
+color: white;
+border-color: rgba(0,0,0,0.2);
 
-  background: #55ACEE;
-  color: white;
+
 }
 .fa-linkedin 
 {
@@ -115,3 +126,18 @@ h1 {
     background-color: #3f729b;
     border-color: rgba(0,0,0,0.2);
 }
+body
+{
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+}
+img
+{
+    margin:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer{
+    position: relative;
+}
+
