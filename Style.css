@@ -1,143 +1,188 @@
 /* The side navigation menu */
 
 .sidenav {
-    height: 100%;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 1;
-    background-color: #111;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 1;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 
 .sidenav a {
-    padding: 32px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 40px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    text-align: center;
+  padding: 32px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
 }
 
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-.navbar .navbar-expand-lg .navbar-light .bg-light
-{
-    width: 100%;
-    position: fixed;
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+  width: 100%;
+  position: fixed;
 }
 
-.navbar-brand 
-{
-    font-family: 'Cedarville Cursive', cursive;
-    margin-left: 25px;
-    font-size: 25px;
-    float: left;
+.navbar-brand {
+  font-family: "Cedarville Cursive", cursive;
+  margin-left: 25px;
+  font-size: 25px;
+  float: left;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
 #main {
-    transition: margin-left .5s;
-    padding: 20px;
+  transition: margin-left 0.5s;
+  padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 300px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
-
 span {
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 h1 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-.fa
-{
-  font-size: 15px !important;
-  border: 5px;
-  padding:5px;
-  float: right;
-  vertical-align: middle;
+.fa {
+  font-size: 16px !important;
+  border: 10px;
+  padding: 5px;
+  vertical-align: bottom;
+  width: 24px;
 }
-.fa-facebook 
-{
-  background: #3B5998;
+.fa-facebook {
+  background: #3b5998;
   color: white;
-  border-color: rgba(0,0,0,0.2);
-
+  border-color: rgba(0, 0, 0, 0.2);
 }
-.fa-twitter 
-{
-background: #3B5998;
-color: white;
-border-color: rgba(0,0,0,0.2);
-
-
+.fa-twitter {
+  background: #3b5998;
+  color: white;
+  border-color: rgba(0, 0, 0, 0.2);
 }
-.fa-linkedin 
-{
+.fa-linkedin {
   background: #007bb5;
   color: white;
 }
-.fa-instagram
-{
-    color: #fff;
-    background-color: #3f729b;
-    border-color: rgba(0,0,0,0.2);
-}
-body
-{
-    position: absolute;
-    width: 100%;
-    margin: 0px;
-}
-img
-{
-    margin:10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-footer{
-    position: relative;
+.fa-instagram {
+  color: #fff;
+  background-color: #3f729b;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
+body {
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+}
+img {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+  position: relative;
+}
+#title {
+  font-size: 30px !important;
+}
+#contactus {
+  text-align: center;
+  width: 100%;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 16px !important;
+}
+#news {
+  text-align: center;
+  width: 100%;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 16px !important;
+}
+
+input[type="text"] {
+  width: 20%;
+  padding: 5px 10px;
+  height: 40px;
+  background-color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+input[type="titletext"] {
+  width: 20%;
+  padding: 5px 10px;
+  height: 20px;
+  background-color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#details {
+  height: 150px;
+}
+textarea {
+  width: 20%;
+  height: 100%;
+  padding: 5px 5px;
+  background-color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+input[type="button"],
+input[type="submit"] {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  color: #262626;
+  margin-right: 5px;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+input:hover[type="button"],
+input:hover[type="submit"] {
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  margin-right: 5px;
+  padding: 5px 5px;
+  text-decoration: none;
+}
