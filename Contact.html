@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 
   <title>BrandonKangMedia</title>
 </head>
@@ -48,12 +48,12 @@
   <!-- Main contact and form section -->
 
   <div id="contactus">
-    <form action="#">
+      <form action="contact2.html" method ="post" >
       <div id="title">
         <label for="contact" id="contact">How Can I Contact You:</label>
         <br>
       </div>
-      <input type="text" name="name" id="name" placeholder="Full Name"  required>
+      <input type="text" name="name" id="name" placeholder="Full Name" required>
       <br>
       <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
       <br>
@@ -83,8 +83,10 @@
       <br>
       <input type="titletext" name="email" id="email" placeholder="example123@gmail.com" required>
       <br>
-    
-      <input type="checkbox" name="agree" value="agree" required> I agree to stay up to date.<br>
+      <div id="checkboxtitle">
+        <input type="checkbox" name="agree" value="agree" required>I agree to stay up to date.
+      </div>
+      <br>
       <input type="submit" value="Sign Me Up!">
     </form>
   </div>
@@ -93,13 +95,14 @@
   <footer>
 
   </footer>
-  <script src="index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="Cookie.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="contact.js"></script>
 </body>
 
 </html>

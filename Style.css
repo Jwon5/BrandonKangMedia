@@ -61,13 +61,6 @@
   float: left;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-
-#main {
-  transition: margin-left 0.5s;
-  padding: 20px;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 300px) {
@@ -117,33 +110,104 @@ h1 {
 }
 
 body {
-  position: absolute;
   width: 100%;
-  margin: 0px;
 }
-img {
+ul {
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+ul li {
+  float: left;
   margin: 10px;
+}
+ul li a img {
+  opacity: 0.3;
+  height: 350px;
+  width: 500px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bface {
+  clear: both;
+
+  top: 40px;
+}
+
+.face {
+  float: left;
+  z-index: 99;
+  margin: 10px;
+}
+
+.bface:hover div.slidetext {
+  width: 500px;
+  position: relative;
+  left: 80px;
+  display: block;
+  z-index: -99;
+  opacity: 1;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.slidetext {
+  font-family: 'Tangerine', cursive;
+  width: 300px;
+  text-align: center;
+  vertical-align: 0%;
+  font-size: 60px;
+  top: 9px;
+  height: 200px;
+  z-index: -99;
+  opacity: 0;
+  position: relative;
+  left: 0px;
+  background-color: rgb(34, 17, 80);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.1em;
+  -webkit-border-radius: 40px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 footer {
   position: relative;
+  clear: both;
 }
 #title {
-  font-size: 30px !important;
+  font-size: 50px !important;
 }
 #contactus {
   text-align: center;
   width: 100%;
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 16px !important;
-}
-#news {
-  text-align: center;
-  width: 100%;
-  font-family: "Cedarville Cursive", cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 16px !important;
 }
 
+#newstitle{
+ font-size: 35px;
+}
+#checkboxtitle{
+  font-size: 25px;
+  margin: 0px;
+}
+#news {
+  float:right;
+  text-align: center;
+  width: 100%;
+  font-family: 'Tangerine', cursive;
+  font-size: 16px !important;
+}
+#username{
+  font-size: 80px !important;
+}
+#contact2{
+  float:right;
+  text-align: center;
+  width: 100%;
+  font-family: 'Tangerine', cursive;
+  font-size: 50px !important;
+}
 input[type="text"] {
   width: 20%;
   padding: 5px 10px;
@@ -174,6 +238,7 @@ input[type="submit"] {
   border: 2px solid #000000;
   color: #262626;
   margin-right: 5px;
+  font-size: 25px;
   padding: 5px 5px;
   text-decoration: none;
 }
@@ -183,6 +248,53 @@ input:hover[type="submit"] {
   border: 2px solid #000000;
   color: #ffffff;
   margin-right: 5px;
+  font-size: 25px;
   padding: 5px 5px;
   text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+  height: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
